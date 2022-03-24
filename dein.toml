@@ -14,9 +14,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'vim-jp/vimdoc-ja'
-
-[[plugins]]
 repo='hoob3rt/lualine.nvim'
 
 [[plugins]]
@@ -32,3 +29,9 @@ hook_add = '''
   nmap ]c <Plug>(GitGutterNextHunk)
   nmap [c <Plug>(GitGutterPrevHunk)
 '''
+
+[[plugins]]
+repo = 'lambdalisue/fern.vim'
+
+[[plugins]]
+repo = 'cohama/lexima.vim'

@@ -34,8 +34,11 @@ if vim.fn.len(removed_plugins) > 0 then
 end
 --dein-end------------------------------------------------------
 
-
 --オプション
+--Leaderをスペースに割り当て
+vim.g.mapleader = ' '
+
+--vimrc時代の設定
 vim.cmd 'set number'
 vim.cmd 'set autoindent'
 vim.cmd 'set tabstop=4'
@@ -49,13 +52,12 @@ vim.cmd 'set showmatch'
 vim.cmd 'set clipboard+=unnamed'
 vim.cmd 'set path+=~/studyProject/**'
 vim.cmd 'nnoremap gr gT'
+vim.cmd 'nnoremap <leader>e <cmd>Fern . -reveal=% -drawer<cr>'
 
 --upper lower ignore
 vim.o.ignorecase = true
 vim.o.smartcase = true--大文字がある場合区別する
 
---Leaderをスペースに割り当て
-vim.g.mapleader = ' '
 
 --ステータスラインのカスタマイズ
 local lualine = require('lualine')
