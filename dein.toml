@@ -1,0 +1,34 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'wsdjeg/dein-ui.vim'
+
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
+
+[[plugins]]
+repo = 'morhetz/gruvbox'
+hook_add = '''
+  let g:gruvbox_contrast_dark = 'hard'
+'''
+
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
+
+[[plugins]]
+repo='hoob3rt/lualine.nvim'
+
+[[plugins]]
+repo = 'lambdalisue/gina.vim'
+hook_add = '''
+  nmap <leader>gs <cmd>Gina status<cr>
+'''
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+hook_add = '''
+  let g:gitgutter_map_keys = 0
+  nmap ]c <Plug>(GitGutterNextHunk)
+  nmap [c <Plug>(GitGutterPrevHunk)
+'''
