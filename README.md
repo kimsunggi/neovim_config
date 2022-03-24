@@ -1,1 +1,4 @@
-# neovim_config
+# neovim
+
+###配置先ディレクトリ
+`~/.config/nvim/`
