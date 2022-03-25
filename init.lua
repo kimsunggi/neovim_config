@@ -54,6 +54,13 @@ vim.cmd 'set path+=~/studyProject/**'
 vim.cmd 'nnoremap gr gT'
 vim.cmd 'nnoremap <leader>e <cmd>Fern . -reveal=% -drawer<cr>'
 
+vim.cmd 'nnoremap <leader>p <cmd>Telescope find_files hidden=true theme=get_dropdown<cr>'
+vim.cmd 'nnoremap <leader>gr <cmd>Telescope live_grep theme=get_dropdown<cr>'
+vim.cmd 'nnoremap <leader>b <cmd>Telescope buffers theme=get_dropdown<cr>'
+vim.cmd 'nnoremap <leader>h <cmd>Telescope oldfiles theme=get_dropdown<cr>'
+vim.cmd 'nnoremap <leader>gb <cmd>Telescope git_branches theme=get_dropdown<cr>'
+vim.cmd 'inoremap <C-b> <Up>'
+vim.cmd 'inoremap <C-f> <Down>'
 --upper lower ignore
 vim.o.ignorecase = true
 vim.o.smartcase = true--大文字がある場合区別する
